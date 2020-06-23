@@ -6,11 +6,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { StockbodyComponent } from './stockbody/stockbody.component';
+import { StocklistComponent } from './stocklist/stocklist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    StockbodyComponent,
+    StocklistComponent
   ],
   imports: [
     BrowserModule,
