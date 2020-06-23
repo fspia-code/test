@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { StockbodyComponent } from './stockbody/stockbody.component';
+import { StockSymbol } from './models/stocksymbol';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+
+  @ViewChild(StockbodyComponent) stockbody: StockbodyComponent;
+
+  symbolSelectedFromList(symbol: StockSymbol)
+  {
+  	this.stockbody.createChart();
+  }
 }
