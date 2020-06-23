@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NewsfeedsService } from './newsfeeds.service';
+import { NewsfeedsService } from './services/newsfeeds.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

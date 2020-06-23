@@ -1,4 +1,4 @@
-import { NewsfeedsService } from './../newsfeeds.service';
+import { NewsfeedsService } from '../services/newsfeeds.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
