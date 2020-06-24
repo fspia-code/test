@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { StockbodyComponent } from './stockbody/stockbody.component';
 import { StocklistComponent } from './stocklist/stocklist.component';
 import { StockitemComponent } from './stocklist/stockitem/stockitem.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { StockitemComponent } from './stocklist/stockitem/stockitem.component';
     HomeComponent,
     StockbodyComponent,
     StocklistComponent,
-    StockitemComponent
+    StockitemComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
