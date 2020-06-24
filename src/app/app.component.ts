@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { StockbodyComponent } from './stockbody/stockbody.component';
+import { StockbodyComponent } from './stockview/stockbody/stockbody.component';
 import { StockSymbol } from './models/stocksymbol';
 
 @Component({
@@ -8,7 +8,7 @@ import { StockSymbol } from './models/stocksymbol';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test';
+  title = 'StockWallet';
 
   @ViewChild(StockbodyComponent) stockbody: StockbodyComponent;
 
