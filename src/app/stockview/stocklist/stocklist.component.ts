@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output, ChangeDetectorRef } from '@angular/core';
-import { StockSymbol } from "../models/stocksymbol";
+import { StockSymbol } from "../../models/stocksymbol";
 
 @Component({
   selector: 'app-stocklist',

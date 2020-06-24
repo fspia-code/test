@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 
 import { ChartdataService } from './services/chartdata.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -10,9 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+
 import { StockbodyComponent } from './stockview/stockbody/stockbody.component';
 import { StocklistComponent } from './stockview/stocklist/stocklist.component';
 import { StockitemComponent } from './stockview/stocklist/stockitem/stockitem.component';
@@ -24,9 +23,6 @@ import { StockviewComponent } from './stockview/stockview.component'
     StockbodyComponent,
     StocklistComponent,
     StockitemComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
     StockviewComponent,
   ],
   imports: [
@@ -34,7 +30,9 @@ import { StockviewComponent } from './stockview/stockview.component'
     AppRoutingModule,
     HttpClientModule,
     FlexLayoutModule,
+    SharedModule
   ],
+
   providers: [NewsfeedsService,ChartdataService],
   bootstrap: [AppComponent]
 })

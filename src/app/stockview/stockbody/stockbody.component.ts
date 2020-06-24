@@ -1,6 +1,7 @@
-import { ChartdataService } from './../services/chartdata.service';
+
+import { ChartdataService } from '../../services/chartdata.service';
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
-import * as Highcharts from 'highcharts';
+
 
 
 

@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { StockbodyComponent } from './stockbody/stockbody.component';
+import { StockSymbol } from '../models/stocksymbol';
 
 @Component({
   selector: 'app-stockview',
   templateUrl: './stockview.component.html',
   styleUrls: ['./stockview.component.css']
 })
-export class StockviewComponent implements OnInit {
+export class StockviewComponent  {
 
-  constructor() { }
+  @ViewChild(StockbodyComponent) stockbody: StockbodyComponent;
 
-  ngOnInit(): void {
+  symbolSelectedFromList(symbol: StockSymbol)
+  {
+  	this.stockbody.createChart();
   }
 
 }
