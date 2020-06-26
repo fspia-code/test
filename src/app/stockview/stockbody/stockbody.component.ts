@@ -8,7 +8,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy } fr
 @Component({
   selector: 'app-stockbody',
   templateUrl: './stockbody.component.html',
-  styleUrls: ['./stockbody.component.css']
+  styleUrls: ['./stockbody.component.scss']
 })
 export class StockbodyComponent implements OnInit, AfterViewInit, OnDestroy {
 

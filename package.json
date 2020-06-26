@@ -25,6 +25,7 @@
     "bootstrap": "^3.4.1",
     "highcharts": "^8.1.2",
     "rxjs": "~6.5.4",
+    "sass": "^1.26.9",
     "save": "^2.4.0",
     "save-dev": "0.0.1-security",
     "tslib": "^1.10.0",
