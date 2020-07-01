@@ -6,7 +6,7 @@ import { StockSymbol } from '../models/stocksymbol';
 @Component({
   selector: 'app-stockview',
   templateUrl: './stockview.component.html',
-  styleUrls: ['./stockview.component.css']
+  styleUrls: ['./stockview.component.scss']
 })
 export class StockviewComponent  {
 
@@ -14,7 +14,7 @@ export class StockviewComponent  {
 
   symbolSelectedFromList(symbol: StockSymbol)
   {
-  	this.stockbody.createChart();
+  	this.stockbody.createChart(symbol.id);
   }
 
 }

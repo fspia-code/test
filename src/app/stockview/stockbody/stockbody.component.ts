@@ -23,7 +23,7 @@ export class StockbodyComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	ngAfterViewInit()
 	{
-		this.createChart();
+		// this.createChart();
 	}
 
 	ngOnDestroy()
@@ -31,9 +31,9 @@ export class StockbodyComponent implements OnInit, AfterViewInit, OnDestroy {
 
 	}
 
-	createChart()
+	createChart(symbol)
 	{
-		this.hcs.loadData("ATVI", (symbol, data)=> {
+		this.hcs.loadData(symbol, (symbol, data)=> {
 			this.hcs.createChart(this.chartEl.nativeElement, symbol, data);
 		});
 	}

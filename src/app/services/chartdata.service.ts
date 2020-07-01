@@ -47,7 +47,7 @@ export class ChartdataService {
   */
   chartIntraDay(symbol, data)
   {
-    var config = {
+    let config = {
       chart: { type: 'spline' },
       title : { text : symbol },
       xAxis: {
@@ -88,7 +88,7 @@ export class ChartdataService {
 
   createStockQuery(tickerSymbol)
   {
-    var url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' + tickerSymbol + '&interval=5min&apikey=' + this.apikey;
+    let url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' + tickerSymbol + '&interval=5min&apikey=' + this.apikey;
 
     return encodeURI( url );
   };
@@ -100,7 +100,7 @@ export class ChartdataService {
 
   onDataReceived(symbol, callback, rawData )
   {
-    var highchartsData = this.transformDataForHighCharts( rawData );
+    let highchartsData = this.transformDataForHighCharts( rawData );
 
     callback(symbol, highchartsData);
 
@@ -108,11 +108,11 @@ export class ChartdataService {
 
   transformDataForHighCharts( rawData )
   {
-    var quotes = rawData['Time Series (5min)'],
+    let quotes = rawData['Time Series (5min)'],
       data = [],
       i, item;
       
-    for (var each in quotes)
+    for (let each in quotes)
     {
       item = quotes[each];
 

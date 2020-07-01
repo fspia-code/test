@@ -54,7 +54,7 @@ export class StocklistComponent implements OnInit {
 
 	onStockSymbolSelected(symbol: StockSymbol)
 	{
-		this.selectedStockSymbol.emit();
+		this.selectedStockSymbol.emit(symbol);
 	}
 
 }

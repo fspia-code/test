@@ -1,0 +1,10 @@
+$primary-color: rgba(137, 235, 189, 0.822);
+$secondary-color: rgb(221, 134, 19);
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  padding:5rem;
+  background: $primary-color;
+  margin: 0;
+}
