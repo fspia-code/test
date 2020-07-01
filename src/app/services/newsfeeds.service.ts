@@ -16,6 +16,8 @@ export class NewsfeedsService {
 
   public getNews(){
 
+    
+
     return this.http.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=6598b3959f7946e08e0c0f61cf8df983`);
 
   }

@@ -6,6 +6,9 @@ import { NewsfeedsService } from './services/newsfeeds.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +33,10 @@ import { StockviewComponent } from './stockview/stockview.component'
     AppRoutingModule,
     HttpClientModule,
     FlexLayoutModule,
-    SharedModule
+    SharedModule,
+    // AngularFontAwesomeModule,
+    NgxPaginationModule,
+    FormsModule,
   ],
 
   providers: [NewsfeedsService,ChartdataService],
