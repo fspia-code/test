@@ -1,10 +1,10 @@
 import { Component, OnInit, EventEmitter, Output, ChangeDetectorRef } from '@angular/core';
-import { StockSymbol } from "../models/stocksymbol";
+import { StockSymbol } from "../../models/stocksymbol";
 
 @Component({
   selector: 'app-stocklist',
   templateUrl:'./stocklist.component.html',
-  styleUrls: ['./stocklist.component.css']
+  styleUrls: ['./stocklist.component.scss']
 })
 export class StocklistComponent implements OnInit {
 
@@ -54,7 +54,7 @@ export class StocklistComponent implements OnInit {
 
 	onStockSymbolSelected(symbol: StockSymbol)
 	{
-		this.selectedStockSymbol.emit(symbol);
+		this.selectedStockSymbol.emit();
 	}
 
 }

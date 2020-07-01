@@ -5,7 +5,13 @@
   "projects": {
     "test": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": { 
+
+          "styleext": "scss" 
+    
+        } 
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -24,8 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "node_modules/bootstrap/dist/scss/bootstrap.min.scss",
+            
+              "src/styles.scss"
+              
             ],
             "scripts": []
           },

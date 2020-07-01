@@ -1,13 +1,14 @@
-import { ChartdataService } from './../services/chartdata.service';
+
+import { ChartdataService } from '../../services/chartdata.service';
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
-import * as Highcharts from 'highcharts';
+
 
 
 
 @Component({
   selector: 'app-stockbody',
   templateUrl: './stockbody.component.html',
-  styleUrls: ['./stockbody.component.css']
+  styleUrls: ['./stockbody.component.scss']
 })
 export class StockbodyComponent implements OnInit, AfterViewInit, OnDestroy {
 
