@@ -1,4 +1,27 @@
+
+*{
+  box-sizing: border-box;
+  
+}
+
 header {
-    padding: 20px;
+    padding: 10px;
     background-color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     line-height: 1.5;
+    
   }
+
+  nav {  
+    font-variant: length($list: 50);
+    height: 100%; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: large;
+    
+   }
+   .navbar-brand{
+    font-size: 4rem;
+    color: orangered;
+   }

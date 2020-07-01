@@ -1,8 +1,14 @@
 <header fxLayoutAlign="space-between center">
-    <div>StockWallet</div>
+<nav>
+    <a routerLink="/" class="navbar-brand">StockWallet</a>
+    
     <div fxLayout="row" fxLayoutGap="20px">
-        <a routerLink="/">Home</a>
-        <a routerLink="/stockview">Stock View</a>
-        <a routerLink="/login">Login</a>
+        <ul class="nav navbar-nav navbar-right">
+            <li routerLinkActive="active"><a routerLink="/">Home</a></li>
+            <li routerLinkActive="active"><a routerLink="/stockview">Stock View</a></li>
+            <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
+        </ul>
     </div>
+    
+</nav>
 </header>

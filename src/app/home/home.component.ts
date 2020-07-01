@@ -1,5 +1,10 @@
 import { NewsfeedsService } from '../services/newsfeeds.service';
 import { Component, OnInit } from '@angular/core';
+import { NewsModel } from '../models/newsmodel';
+import { Form } from '@angular/forms';
+import { Pipe, PipeTransform } from '@angular/core';
+import { element } from 'protractor';
+import { pipe } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,30 +12,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-articles: any
-
-  constructor(private newsService: NewsfeedsService) { 
-    // this.loadNews();
-  }
-
-  ngOnInit() {
-
-    this.newsService.getNews().subscribe((data)=>{
-
-      console.log(data);
-
-      this.articles = data['articles'];
-
-    });
-  }
+  articles: any
   
-  // loadNews() {
-  //   this.newsService.getNews("everything?q=bitcoin&from=2020-05-22&sortBy=publishedAt").subscribe( news => {
-  //     this.articles = news['articles'];
-  //     console.log(this.articles);
+    constructor(private newsService: NewsfeedsService) { 
       
-  //   })
-  // }
-
+    }
+  
+    ngOnInit() {
+  
+      this.newsService.getNews().subscribe((data)=>{
+  
+        console.log(data);
+  
+        this.articles = data['articles'];
+  
+      });
+    }
 }
-

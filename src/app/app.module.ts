@@ -4,11 +4,12 @@ import { ChartdataService } from './services/chartdata.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NewsfeedsService } from './services/newsfeeds.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, PipeTransform } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-// import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 import {NgxPaginationModule} from 'ngx-pagination';
 import {FormsModule} from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,7 +35,6 @@ import { StockviewComponent } from './stockview/stockview.component'
     HttpClientModule,
     FlexLayoutModule,
     SharedModule,
-    // AngularFontAwesomeModule,
     NgxPaginationModule,
     FormsModule,
   ],

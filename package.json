@@ -28,7 +28,7 @@
     "font-awesome": "^4.7.0",
     "highcharts": "^8.1.2",
     "ngx-pagination": "^5.0.0",
-    "rxjs": "~6.5.4",
+    "rxjs": "^6.5.5",
     "sass": "^1.26.9",
     "save": "^2.4.0",
     "save-dev": "0.0.1-security",

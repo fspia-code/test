@@ -1,21 +1,19 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title>
-      News
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true">
-  <ion-card *ngFor="let article of articles">
-    <ion-img [src]="article.urlToImage">
-
-    </ion-img>
-  </ion-card>
-</ion-content> -->
-<div *ngFor="let article of articles">
-
-    <h2>{{article.title}}</h2>
-  
+<body class="container">
+<!-- <div class="container"> -->
+<div class="d-flex flex-sm-wrap">
+<div class="col-md-4 col-lg-3 my-3 d-flex align-items-stretch"  *ngFor="let article of articles">
+    <div class="card">
+        <img class="img-thumbnail" src="{{article.urlToImage}}" alt="Thumbnail image">
+    
+        <div class="card-body">
+            <div class="card-title text-capitalize">
+                <h3>{{article.title}}</h3>
+            </div>
+    
+            <div class="d-flex justify-content-left mt-3">
+                <p class="badge badge-secondary mr-3">{{article.publishedAt |date}}</p>
+                <p class="badge badge-secondary ">{{article.author}}</p>
+            </div>
       <p>
   
         {{article.description}}
@@ -23,5 +21,11 @@
       </p>
   
       <a href="{{article.url}}">Read full article</a>
+
+        </div>
   
-  </div>
+    </div>
+</div>
+</div>
+<!-- </div> -->
+</body>
